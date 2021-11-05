@@ -13,5 +13,15 @@ class MainActivity : AppCompatActivity() {
         btnClock.setOnClickListener {
             startActivity(Intent(this, ClockCustomView::class.java))
         }
+        btnLockParttern.setOnClickListener {
+            startActivity(Intent(this, LockPattern::class.java))
+        }
+        btnEdittextCustom.setOnClickListener {
+            startActivity(Intent(this, EdittextCustomActivity::class.java))
+        }
+        btnAnimation.setOnClickListener {
+            startActivity(Intent(this, AnimationActivity::class.java))
+        }
+
     }
 }
