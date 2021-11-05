@@ -47,4 +47,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
     // LiveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")
+
+    //color picker
+    implementation("com.github.duanhong169:colorpicker:1.1.5")
 }

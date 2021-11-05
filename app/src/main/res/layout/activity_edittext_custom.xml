@@ -6,9 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".activities.EdittextCustomActivity">
 
-    <EditText
+    <com.example.customview.viewcustom.EdittextCustom
+        android:id="@+id/edtCustom"
         android:layout_width="match_parent"
-        android:hint="abc"
-        android:layout_height="wrap_content" />
+        android:layout_height="50dp"
+        android:hint="abc" />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="color" />
 
 </RelativeLayout>
