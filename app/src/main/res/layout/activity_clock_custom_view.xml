@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ClockCustomView">
+
+    <EditText
+        android:id="@+id/edtHour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Hours"
+        android:inputType="number"
+        android:maxLength="2"
+        android:paddingStart="10dp"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/edtMinutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtHour"
+        android:layout_margin="10dp"
+        android:hint="Minutes"
+        android:inputType="number"
+        android:maxLength="2"
+        android:paddingStart="10dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btnSettime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtMinutes"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="10dp"
+        android:text="Set Time" />
+
+    <com.example.customview.viewcustom.Clock
+        android:layout_centerHorizontal="true"
+        android:id="@+id/clock"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/btnSettime" />
+
+</RelativeLayout>
