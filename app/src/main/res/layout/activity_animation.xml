@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.AnimationActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/hi" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+
+    <ScrollView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/image"
+        android:layout_marginTop="20dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnFadeIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fade In"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnFadeOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fade Out"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnBlink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blink"
+                android:textAllCaps="false" />
+
+            <Button                android:textAllCaps="false"
+                android:id="@+id/btnZoomIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zoom In" />
+
+            <Button                android:textAllCaps="false"
+                android:id="@+id/btnZoomOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zoom Out" />
+
+            <Button                android:textAllCaps="false"
+                android:id="@+id/btnRotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rotate" />
+
+            <Button                android:textAllCaps="false"
+                android:id="@+id/btnMove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Move" />
+
+            <Button                android:textAllCaps="false"
+                android:id="@+id/btnSlideUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slide Up" />
+
+            <Button                android:textAllCaps="false"
+                android:id="@+id/btnSlideDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slide Down" />
+
+            <Button                android:textAllCaps="false"
+                android:id="@+id/btnSequential"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sequential" />
+
+            <Button                android:textAllCaps="false"
+                android:id="@+id/btnTogether"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Together" />
+
+        </GridLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

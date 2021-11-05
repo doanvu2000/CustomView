@@ -11,12 +11,4 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="abc" />
-
-    <Button
-        android:id="@+id/btnClick"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="color" />
-
 </RelativeLayout>
