@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillAfter="true"
-    android:interpolator="@android:anim/linear_interpolator" >
+    android:interpolator="@android:anim/linear_interpolator">
     <!-- Use startOffset to give delay between animations -->
     <!-- Move -->
     <translate
@@ -35,8 +35,8 @@
         android:interpolator="@android:anim/cycle_interpolator"
         android:pivotX="50%"
         android:pivotY="50%"
-        android:startOffset="3700"
         android:repeatCount="infinite"
         android:repeatMode="restart"
+        android:startOffset="3700"
         android:toDegrees="360" />
 </set>

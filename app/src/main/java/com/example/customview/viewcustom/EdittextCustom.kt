@@ -9,7 +9,6 @@ import android.view.View
 import android.widget.EditText
 import android.widget.LinearLayout
 import com.example.customview.R
-import kotlinx.android.synthetic.main.edittextcustom.view.*
 import top.defaults.colorpicker.ColorPickerPopup
 
 @SuppressLint("AppCompatCustomView")

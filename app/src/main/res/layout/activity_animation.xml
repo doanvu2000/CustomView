@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,10 +20,10 @@
         android:text="Cancel" />
 
     <ScrollView
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/image"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="20dp">
 
         <GridLayout
@@ -55,53 +54,61 @@
                 android:text="Blink"
                 android:textAllCaps="false" />
 
-            <Button                android:textAllCaps="false"
+            <Button
                 android:id="@+id/btnZoomIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Zoom In" />
+                android:text="Zoom In"
+                android:textAllCaps="false" />
 
-            <Button                android:textAllCaps="false"
+            <Button
                 android:id="@+id/btnZoomOut"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Zoom Out" />
+                android:text="Zoom Out"
+                android:textAllCaps="false" />
 
-            <Button                android:textAllCaps="false"
+            <Button
                 android:id="@+id/btnRotate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rotate" />
+                android:text="Rotate"
+                android:textAllCaps="false" />
 
-            <Button                android:textAllCaps="false"
+            <Button
                 android:id="@+id/btnMove"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Move" />
+                android:text="Move"
+                android:textAllCaps="false" />
 
-            <Button                android:textAllCaps="false"
+            <Button
                 android:id="@+id/btnSlideUp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Slide Up" />
+                android:text="Slide Up"
+                android:textAllCaps="false" />
 
-            <Button                android:textAllCaps="false"
+            <Button
                 android:id="@+id/btnSlideDown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Slide Down" />
+                android:text="Slide Down"
+                android:textAllCaps="false" />
 
-            <Button                android:textAllCaps="false"
+            <Button
                 android:id="@+id/btnSequential"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sequential" />
+                android:text="Sequential"
+                android:textAllCaps="false" />
 
-            <Button                android:textAllCaps="false"
+            <Button
                 android:id="@+id/btnTogether"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Together" />
+                android:text="Together"
+                android:textAllCaps="false" />
 
         </GridLayout>
     </ScrollView>

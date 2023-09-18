@@ -1,7 +1,7 @@
 package com.example.customview.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.customview.R
 
 class LockPattern : AppCompatActivity() {

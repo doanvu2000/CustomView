@@ -158,6 +158,7 @@ class LockScreen(context: Context, attributeSet: AttributeSet) : View(context, a
                     }
                 }
             }
+
             MotionEvent.ACTION_MOVE -> {
                 if (startPoint != null) {
                     for (i in listPoint) {
@@ -172,6 +173,7 @@ class LockScreen(context: Context, attributeSet: AttributeSet) : View(context, a
                     }
                 }
             }
+
             MotionEvent.ACTION_UP -> {
                 startPoint = null
                 endPoint = null

@@ -2,7 +2,7 @@ package com.example.customview.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import java.util.*
+import java.util.Calendar
 
 class ClockViewModel : ViewModel() {
     var cal = MutableLiveData<Calendar>()

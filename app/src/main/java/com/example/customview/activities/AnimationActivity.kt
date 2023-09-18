@@ -1,83 +1,85 @@
 package com.example.customview.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import androidx.appcompat.app.AppCompatActivity
 import com.example.customview.R
-import kotlinx.android.synthetic.main.activity_animation.*
+import com.example.customview.databinding.ActivityAnimationBinding
 
 class AnimationActivity : AppCompatActivity() {
+    private val binding by lazy {
+        ActivityAnimationBinding.inflate(layoutInflater)
+    }
     private lateinit var animation: Animation
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_animation)
+        setContentView(binding.root)
         supportActionBar?.title = "Animation"
         animation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
-        clickButton()
-
+        initListener()
     }
 
-    private fun clickButton() {
+    private fun initListener() {
         //Hiệu ứng mờ
-        btnFadeIn.setOnClickListener {
+        binding.btnFadeIn.setOnClickListener {
             animation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
-            image.startAnimation(animation)
+            binding.image.startAnimation(animation)
         }
         //Hiệu ứng mờ
-        btnFadeOut.setOnClickListener {
+        binding.btnFadeOut.setOnClickListener {
             animation = AnimationUtils.loadAnimation(this, R.anim.fade_out)
-            image.startAnimation(animation)
+            binding.image.startAnimation(animation)
         }
         //Hiệu ứng nhấp nháy
-        btnBlink.setOnClickListener {
+        binding.btnBlink.setOnClickListener {
             animation = AnimationUtils.loadAnimation(this, R.anim.blink)
-            image.startAnimation(animation)
+            binding.image.startAnimation(animation)
         }
         //Hiệu ứng Zoom_In
-        btnZoomIn.setOnClickListener {
+        binding.btnZoomIn.setOnClickListener {
             animation = AnimationUtils.loadAnimation(this, R.anim.zoom_in)
-            image.startAnimation(animation)
+            binding.image.startAnimation(animation)
         }
         //Hiệu ứng Zoom_Out
-        btnZoomOut.setOnClickListener {
+        binding.btnZoomOut.setOnClickListener {
             animation = AnimationUtils.loadAnimation(this, R.anim.zoom_out)
-            image.startAnimation(animation)
+            binding.image.startAnimation(animation)
         }
         //Hiệu ứng Rotate
-        btnRotate.setOnClickListener {
+        binding.btnRotate.setOnClickListener {
             animation = AnimationUtils.loadAnimation(this, R.anim.rotate)
-            image.startAnimation(animation)
+            binding.image.startAnimation(animation)
         }
         //Hiệu ứng di chuyển
-        btnMove.setOnClickListener {
+        binding.btnMove.setOnClickListener {
             animation = AnimationUtils.loadAnimation(this, R.anim.move)
-            image.startAnimation(animation)
+            binding.image.startAnimation(animation)
         }
         //Hiệu ứng trượt lên
-        btnSlideUp.setOnClickListener {
+        binding.btnSlideUp.setOnClickListener {
             animation = AnimationUtils.loadAnimation(this, R.anim.slide_up)
-            image.startAnimation(animation)
+            binding.image.startAnimation(animation)
         }
         //Hiệu ứng trượt xuống
-        btnSlideDown.setOnClickListener {
+        binding.btnSlideDown.setOnClickListener {
             animation = AnimationUtils.loadAnimation(this, R.anim.slide_down)
-            image.startAnimation(animation)
+            binding.image.startAnimation(animation)
         }
         //Hiệu ứng thực hiện tuần tự
-        btnSequential.setOnClickListener {
+        binding.btnSequential.setOnClickListener {
             animation = AnimationUtils.loadAnimation(this, R.anim.sequential)
-            image.startAnimation(animation)
+            binding.image.startAnimation(animation)
         }
         //Hiệu ứng thực hiện đồng thời
-        btnTogether.setOnClickListener {
+        binding.btnTogether.setOnClickListener {
             animation = AnimationUtils.loadAnimation(this, R.anim.together)
-            image.startAnimation(animation)
+            binding.image.startAnimation(animation)
         }
 
         //Cancel Animation
-        btnCancel.setOnClickListener {
-            image.clearAnimation()
+        binding.btnCancel.setOnClickListener {
+            binding.image.clearAnimation()
         }
     }
 }
